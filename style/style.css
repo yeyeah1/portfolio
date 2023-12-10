@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "GmarketBold";
+  src: url("../src/font/GmarketSansTTFBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GmarketMedium";
+  src: url("../src/font/GmarketSansTTFMedium.ttf") format("truetype");
+}
+* {
+  font-family: "GmarketMedium";
+}
+body {
+  padding-top: 120px;
+  background-color: #eef5ff;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/*header*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 45px 60px;
+  background-color: white;
+  color: #7c93c3;
+  font-size: 18px;
+  z-index: 10;
+}
+.nav-list {
+  display: flex;
+  justify-content: right;
+}
+.list-link {
+  margin-left: 50px;
+}
+.list-link:hover {
+  color: #a25772;
+  border-bottom: 2px solid balck;
+}
+.bar-bg {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #dae7fc;
+}
+.bar-ing {
+  position: absolute;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #748bbc;
+}
+
+/*intro*/
+.cont-intro {
+  margin: 100px 0 250px 0;
+  display: flex;
+  justify-content: center;
+}
+.cont-intro img {
+  width: 340px;
+  margin-left: 250px;
+}
+.txt-title1 {
+  width: 620px;
+  margin-top: 60px;
+  margin-left: 50px;
+  font-size: 46px;
+  font-family: "GmarketBold";
+  color: #7c93c3;
+  line-height: 58px;
+}
+.txt-title2 {
+  width: 620px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 180px;
+  font-size: 55px;
+  font-family: "GmarketBold";
+  color: #a25772;
+  line-height: 58px;
+}
+.txt-title3 {
+  width: 620px;
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 55px;
+  font-family: "GmarketBold";
+  color: #a25772;
+  line-height: 58px;
+}
+.txt-title4 {
+  width: 620px;
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 46px;
+  font-family: "GmarketBold";
+  color: #7c93c3;
+  line-height: 58px;
+}
+
+/*about*/
+.section-about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 80px 0 140px 0;
+  margin: 0 0 140px 0;
+}
+.section-about h2 {
+  margin: 0 auto 100px;
+  display: inline-block;
+  font-family: "GmarketBold";
+  color: #a25772;
+  font-size: 40px;
+}
+.cont-about {
+  display: flex;
+  margin: 0 auto;
+}
+.cont-about img {
+  width: 360px;
+}
+.info-about {
+  margin: 50px 0 0 60px;
+  display: flex;
+  justify-content: center;
+}
+.txt-about dt {
+  display: inline-block;
+  margin-bottom: 17px;
+  width: 110px;
+  font-size: 22px;
+  font-family: "GmarketBold";
+  color: #7c93c3;
+}
+.txt-about {
+  margin-top: 55px;
+}
+.txt-about dd {
+  display: inline-block;
+  font-size: 22px;
+}
+
+/*projects*/
+.section-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 180px;
+}
+.section-project h2 {
+  margin: 0 auto 100px;
+  display: inline-block;
+  font-family: "GmarketBold";
+  color: #a25772;
+  font-size: 40px;
+}
+.box-project {
+  margin: 30px auto;
+  display: flex;
+  padding: 35px;
+  width: 1000px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.img-project {
+  border-radius: 15px;
+  width: 470px;
+  margin-bottom: 25px;
+}
+.btn-detail {
+  cursor: pointer;
+  padding: 10px 170px;
+  border-radius: 15px;
+  border: none;
+  background-color: #7c93c3;
+  border: solid 2px #7c93c3;
+  color: white;
+  font-size: 20px;
+}
+.btn-detail:hover {
+  background-color: white;
+  border: solid 2px #7c93c3;
+  color: #7c93c3;
+}
+.txt-project {
+  text-align: left;
+  margin: 25px 0 0 40px;
+}
+.txt-project h3 {
+  font-family: "GmarketBold";
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+.txt-project dl dt {
+  font-family: "GmarketBold";
+  color: #6a75ca;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.txt-project dl dd {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/*footer*/
+#footer {
+  text-align: center;
+}
+#footer h2 {
+  margin: 0 auto 20px;
+  display: inline-block;
+  font-family: "GmarketBold";
+  color: #a25772;
+  font-size: 40px;
+}
+.box-footer {
+  width: 100%;
+  background-color: white;
+  padding: 80px 0 70px 0;
+}
+.link-sns ul {
+  display: inline-block;
+  margin: 30px auto;
+}
+.link-sns li {
+  display: inline-block;
+  padding: 35px;
+  font-size: 12px;
+}
+.link-sns li a img {
+  margin-bottom: 10px;
+}
+.img-github,
+.img-tistory {
+  width: 50px;
+}
+.box-footer p {
+  color: #6a75ca;
+  margin-top: 50px;
+}
+
+/*moveTop btn*/
+.btn-moveTop {
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  width: 64px;
+  height: 64px;
+  background-image: url(../src/img/btn-moveTop.png);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.btn-moveTop:hover {
+  background-image: url(../src/img/btn-moveTop-hover.png);
+  transition: 0.5s ease-out;
+}
