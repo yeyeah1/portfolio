@@ -125,11 +125,12 @@ body::-webkit-scrollbar {
   margin: 0 auto;
 }
 .cont-about img {
-  width: 360px;
+  width: 350px;
+  margin: auto;
 }
 .info-about {
   margin: 50px 0 0 60px;
-  display: flex;
+  display: inline-block;
   justify-content: center;
 }
 .txt-about dt {
@@ -146,6 +147,25 @@ body::-webkit-scrollbar {
 .txt-about dd {
   display: inline-block;
   font-size: 22px;
+}
+.btn-skills {
+  margin: 20px 0 0 0;
+}
+.btn-skills button {
+  width: 250px;
+  height: 40px;
+  margin: 0 45px 0 0;
+  border-radius: 10px;
+  background-color: #7c93c3;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+.btn-skills button:hover {
+  cursor: pointer;
+  background-color: #d1daee;
+  color: #6b82b3;
+  transition: 0.5s ease-out;
 }
 
 /*projects*/
@@ -264,4 +284,55 @@ body::-webkit-scrollbar {
 .btn-moveTop:hover {
   background-image: url(../src/img/btn-moveTop-hover.png);
   transition: 0.5s ease-out;
+}
+
+/*모달*/
+.modal-background {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.modal {
+  position: absolute;
+  top: 20%;
+  width: 500px;
+  height: 350px;
+  background-color: #dde6f8;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.modal h3 {
+  margin: 40px 0 7px 0;
+  font-size: 25px;
+  color: #6a75ca;
+  font-family: "GmarketBold";
+}
+.modal p {
+  margin: 0 auto;
+  width: 310px;
+  font-size: 17px;
+  line-height: 24px;
+}
+.btn-close {
+  padding: 8px 140px;
+  margin: 45px 0 35px 0;
+  background-color: #9eb4e5;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+.btn-close:hover {
+  background-color: white;
+  color: #9eb4e5;
+  transition: 0.3s ease-out;
+  cursor: pointer;
 }
